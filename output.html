@@ -4,8 +4,19 @@
 	<head>
 	</head>
 	<body>
+        <h1 id="test">Testing</h1>
         <script>
-            document.write("<h1>Hello World!</h1>");
+        
+            function replaceHTML(id, replacement){
+                target = document.getElementById(id);
+                target.innerHTML = replacement;
+            }
+            
+            var replacement = "Hello World!";
+            var id = 'test';
+            
+            replaceHTML(id, replacement);
+            
         </script>
         <noscript>
             Your browser doesn't support or has disabled JavaScript
